@@ -1,4 +1,4 @@
-# The most basic of basic caluclators....nice
+# The most basic of basic calculators....nice
 
 # adding function
 def add(number1, number2):
@@ -20,11 +20,17 @@ def divide(number1, number2):
     return number1 / number2
 
 
+# while True:
+#     char = input("Enter q to Quit: ")
+#
+#     if char.lower() == 'q':
+#         break
+
 print("Please pick two numbers, but don't get too crazy -\n"
-      "1. add\n"
-      "2. minus\n"
-      "3. multiply\n"
-      "4.divide")
+          "1. add\n"
+          "2. minus\n"
+          "3. multiply\n"
+          "4.divide")
 
 select = int(input("Select between 1, 2, 3, 4,: "))
 
@@ -42,9 +48,12 @@ elif select == 4:
         print(numberSelection1, "/", numberSelection2, "=", divide(numberSelection1, numberSelection2))
     else:
         print("Cannot divide by 0")
-
 else:
     print("Invalid input")
+
+    # q = input('do you want to continue?: ')
+    # if quit = 'q':
+    # break
 
     # try:
     #     print(numberSelection1, "/", numberSelection2, "=", divide(numberSelection1, numberSelection2))
