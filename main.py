@@ -34,10 +34,19 @@ numberSelection2 = float(input("Enter another number, things are about to get cr
 if select == 1:
     print(numberSelection1, "+", numberSelection2, "=", add(numberSelection1, numberSelection2))
 elif select == 2:
-    print(numberSelection1, "+", numberSelection2, "=", minus(numberSelection1, numberSelection2))
+    print(numberSelection1, "-", numberSelection2, "=", minus(numberSelection1, numberSelection2))
 elif select == 3:
-    print(numberSelection1, "+", numberSelection2, "=", multiply(numberSelection1, numberSelection2))
+    print(numberSelection1, "*", numberSelection2, "=", multiply(numberSelection1, numberSelection2))
 elif select == 4:
-    print(numberSelection1, "+", numberSelection2, "=", divide(numberSelection1, numberSelection2))
+    if numberSelection2 != 0:
+        print(numberSelection1, "/", numberSelection2, "=", divide(numberSelection1, numberSelection2))
+    else:
+        print("Cannot divide by 0")
 
+else:
+    print("Invalid input")
 
+    # try:
+    #     print(numberSelection1, "/", numberSelection2, "=", divide(numberSelection1, numberSelection2))
+    # expect ZeroDivisionError:
+    # print("Cannot divide by 0")
